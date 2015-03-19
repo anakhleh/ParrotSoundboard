@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+ 
+	<head>
+		<meta name="viewport" content="width=208">
+		
+		<title>Soundboard</title>
+	 
+		<!-- JavaScript -->
+		<script type="text/javascript">
+			var playSound = function(filename) {
+				var soundObj = document.getElementById('sound');
+				soundObj.src = filename;
+				soundObj.pause(); 
+				soundObj.currentTime = 0; 
+				soundObj.play();
+			};
+		</script>
+	 
+		<!-- CSS -->
+		<style type="text/css">
+		<!--
+	 
+			body { background-color: white; margin: 0; padding: 0; font-family: sans-serif; font-size: 12px; }
+			p { margin-bottom: 10px; }
+	 
+		-->
+			body {
+				margin: 0 auto;
+				width: 208px;
+				text-align: center;
+			}
+			#wrapper {
+				
+			}
+			button {
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				margin: 1px;
+				padding: 1px;
+				color: #faddde;
+				border: solid 1px #980c10;
+				background: #d81b21;
+				background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+				background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+				outline: none;
+				cursor: pointer;
+				text-decoration: none;
+				font: 14px/100% Arial, Helvetica, sans-serif;
+				text-shadow: 0 1px 1px rgba(0,0,0,.3);
+				-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+				-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+				box-shadow: 0 1px 2px rgba(0,0,0,.2);
+			}
+			button:hover {
+				text-decoration: none;
+				background: #b61318;
+				background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+				background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
+			}
+			button:active {
+				position: relative;
+				top: 1px;
+				color: #de898c;
+				background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+				background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
+				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
+			}
+		</style>
+	 
+	</head>
+	 
+	<body>
+		<audio id="sound" src="" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		<div id="wrapper">
+			<button onclick="playSound('./sounds/wow.mp3');" touchstart="playSound('./sounds/wow.mp3');">Wow!</button>
+			<button onclick="playSound('./sounds/UBER WOW.mp3');" touchstart="playSound('./sounds/UBER WOW.mp3');">UBER WOW!</button>
+			<button onclick="playSound('./sounds/ho ho oyeah.mp3');" touchstart="playSound('./sounds/ho ho oyeah.mp3');">Ho ho oyeah!</button>
+			<button onclick="playSound('./sounds/look at it go.mp3');" touchstart="playSound('./sounds/look at it go.mp3');">Look at it go!</button>
+		</div>
+	</body>
+ 
+</html>
