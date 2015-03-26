@@ -15,6 +15,12 @@
 				soundObj.currentTime = 0; 
 				soundObj.play();
 			};
+			
+			var stopSound = function() {
+				var soundObj = document.getElementById('sound');
+				soundObj.pause(); 
+				soundObj.currentTime = 0;
+			};
 		</script>
 	 
 		<!-- CSS -->
@@ -36,6 +42,12 @@
 			#header {
 				color: #888888;
 				font-size: 36px;
+			}
+			hr {
+				color: #DDDDDD;
+				background-color: #DDDDDD;
+				width: 75%;
+				border: solid 1px;
 			}
 			.cat {
 				margin-bottom: 5pt;
@@ -93,11 +105,17 @@
 				background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
 				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
 			}
-			hr {
-				color: #DDDDDD;
-				background-color: #DDDDDD;
-				width: 75%;
-				border: solid 1px;
+			#stopButton {
+				position: fixed;
+				bottom: 2px;
+				right: 2px;
+				width: 50px;
+				height: 50px;
+			}
+			#stopButton:active {
+				position: fixed;
+				top: auto;
+				bottom: 1px;
 			}
 		</style>
 	 
@@ -107,6 +125,7 @@
 		<div id="wrapper">
 			<div id="header">P&nbsp;a&nbsp;r&nbsp;r&nbsp;o&nbsp;t</div>
 			<audio id="sound" src="" type="audio/mpeg"><b>Your browser does not support HTML5 audio. Please use a browser that does, such as Chrome or Firefox.</b></audio>
+			<button id="stopButton" onclick="stopSound();" touchstart="stopSound();">Stop</button>
 			<hr>
 			<div class="cat">
 				<div class="label">Miscellaneous</div>
