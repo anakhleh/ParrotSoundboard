@@ -1,4 +1,4 @@
-ParrotSoundboard
+Parrot Soundboard
 ===========
 
 A website full of funny situational sound effects
