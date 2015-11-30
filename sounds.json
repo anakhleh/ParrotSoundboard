@@ -1,0 +1,52 @@
+{"cats": [
+	{"name": "Miscellaneous",
+	"sounds": [
+		{"text": "Developers!",
+		"src": "developers"},
+		{"text": "Ecks-bawks!",
+		"src": "ecks-bawks"}
+	],
+	"subcats": [
+		{"name": "Reaction",
+		"sounds": [
+			{"text": "*beep*!",
+			"src": "censor"},
+			{"text": "Ba dum tsh!",
+			"src": "rimshot"}
+		]},
+		{"name": "Wow",
+		"sounds": [
+			{"text": "Wow!",
+			"src": "wow"},
+			{"text": "UBER WOW!",
+			"src": "UBER WOW"},
+			{"text": "Wow-*beep*!",
+			"src": "wow beep"}
+		]}
+	]},
+	{"name": "Miscellaneous",
+	"sounds": [
+		{"text": "Developers!",
+		"src": "developers"},
+		{"text": "Ecks-bawks!",
+		"src": "ecks-bawks"}
+	],
+	"subcats": [
+		{"name": "Reaction",
+		"sounds": [
+			{"text": "*beep*!",
+			"src": "censor"},
+			{"text": "Ba dum tsh!",
+			"src": "rimshot"}
+		]},
+		{"name": "Wow",
+		"sounds": [
+			{"text": "Wow!",
+			"src": "wow"},
+			{"text": "UBER WOW!",
+			"src": "UBER WOW"},
+			{"text": "Wow-*beep*!",
+			"src": "wow beep"}
+		]}
+	]}
+]}

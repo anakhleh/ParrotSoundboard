@@ -1,0 +1,88 @@
+body {
+	margin: 0 auto;
+	width: device-width;
+	text-align: center;
+}
+#wrapper {
+	font-family: Helvetica, Arial, sans-serif;
+}
+#header {
+	color: #888888;
+	font-size: 36px;
+}
+hr {
+	color: #DDDDDD;
+	background-color: #DDDDDD;
+	width: 75%;
+	border: solid 1px;
+}
+.cat {
+	margin-bottom: 5pt;
+}
+.label {
+	color: #999999;
+	font-size: 18px;
+}
+.subcat {
+	width: intrinsic;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sublabel {
+	color: #AAAAAA;
+	font-size: 14px;
+	text-align: left;
+}
+button {
+	vertical-align: middle;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 1px;
+	padding: 2px;
+	color: #faddde;
+	border: solid 1px #980c10;
+	background: #d81b21;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+	background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+button:hover {
+	text-decoration: none;
+	background: #b61318;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+	background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
+}
+button:active {
+	position: relative;
+	top: 1px;
+	color: #de898c;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+	background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
+}
+#stopButton {
+	position: fixed;
+	z-index: 2;
+	bottom: 2px;
+	right: 2px;
+	width: 50px;
+	height: 50px;
+}
+#stopButton:active {
+	position: fixed;
+	top: auto;
+	bottom: 1px;
+}
