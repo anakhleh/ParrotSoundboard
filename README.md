@@ -1,9 +1,9 @@
 Parrot Soundboard
 ===========
 
-A website full of funny situational sound effects
+A website full of funny situational sound bites.
 
-I named it Parrot because, like a parrot, it can play back short soundbytes on demand.
+It is named Parrot because, like a parrot, it can play back short sound bites on demand.
 
 Usage
 ===========
