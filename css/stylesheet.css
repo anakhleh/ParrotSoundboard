@@ -10,6 +10,13 @@ body {
 	color: #888888;
 	font-size: 36px;
 }
+#footer {
+	color: #AAAAAA;
+	font-size: 12px;
+}
+#footer a {
+    color: #AAAAAA;
+}
 hr {
 	color: #DDDDDD;
 	background-color: #DDDDDD;
