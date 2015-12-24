@@ -1,6 +1,5 @@
 body {
 	margin: 0 auto;
-	width: device-width;
 	text-align: center;
 }
 #wrapper {
@@ -31,7 +30,6 @@ hr {
 	font-size: 18px;
 }
 .subcat {
-	width: max-content;
 	display: inline-block;
 	position: relative;
 	z-index: 1;
