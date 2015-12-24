@@ -1,5 +1,5 @@
 app.factory('sounds', ['$http', function($http) { 
-  return $http.get('file:///D:/GitHub/ParrotSoundboard/sounds.json') //change this before commiting
+  return $http.get('./sounds.json')
             .success(function(data) { 
               return data; 
             }) 
