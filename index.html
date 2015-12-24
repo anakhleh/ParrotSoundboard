@@ -1,358 +1,51 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
- <html>
-	<head>
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
 		<link rel="shortcut icon" href="./favicon.ico" />
 		<link rel="apple-touch-icon" href="./apple-touch-icon.png">
 		
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		
-		<title>Parrot Soundboard</title>
-	 
-		<!-- JavaScript -->
+        
+        <link href="./css/stylesheet.css" rel="stylesheet" />
+        
+        <!-- Core AngularJS library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+        <!-- <script src="./js/libraries/angular.min.js"></script> -->
+        <!-- AngularJS routing library -->
+        <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+        <!-- <script src="./js/libraries/angular-route.min.js"></script> -->
+        <!-- Modules -->
+        <script src="./js/app.js"></script>
+        <!-- Controllers -->
+        <script src="./js/controllers/HomeController.js"></script>
+        <!-- <script src="./js/controllers/PhotoController.js"></script>   -->
+        <!-- Directives -->
+        <script src="./js/directives/cat.js"></script>
+        <script src="./js/directives/ngTouchstart.js"></script>
+        <script src="./js/directives/subcat.js"></script>
+        <script src="./js/directives/soundButton.js"></script>
+        <!-- Services -->
+        <script src="./js/services/sounds.js"></script>
+        
 		<script type="text/javascript">
-			var playSound = function(filename) {
-				var soundObj = document.getElementById('sound');
-				soundObj.src = filename;
-				soundObj.pause(); 
-				soundObj.currentTime = 0; 
-				soundObj.play();
-			};
-			
 			var stopSound = function() {
 				var soundObj = document.getElementById('sound');
 				soundObj.pause(); 
 				soundObj.currentTime = 0;
 			};
 		</script>
-	 
-		<!-- CSS -->
-		<style type="text/css">
-		<!--
-	 
-			body { background-color: white; margin: 0; padding: 0; font-family: sans-serif; font-size: 12px; }
-			p { margin-bottom: 10px; }
-	 
-		-->
-			body {
-				margin: 0 auto;
-				width: device-width;
-				text-align: center;
-			}
-			#wrapper {
-				font-family: Helvetica, Arial, sans-serif;
-			}
-			#header {
-				color: #888888;
-				font-size: 36px;
-			}
-			hr {
-				color: #DDDDDD;
-				background-color: #DDDDDD;
-				width: 75%;
-				border: solid 1px;
-			}
-			.cat {
-				margin-bottom: 5pt;
-			}
-			.label {
-				color: #999999;
-				font-size: 18px;
-			}
-			.subcat {
-				width: intrinsic;
-				display: inline-block;
-				position: relative;
-				z-index: 1;
-                margin-left: auto;
-                margin-right: auto;
-			}
-			.sublabel {
-				color: #AAAAAA;
-				font-size: 14px;
-				text-align: left;
-			}
-			button {
-				vertical-align: middle;
-				border-radius: 50%;
-				width: 100px;
-				height: 100px;
-				margin: 1px;
-				padding: 2px;
-				color: #faddde;
-				border: solid 1px #980c10;
-				background: #d81b21;
-				background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
-				background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
-				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
-				outline: none;
-				cursor: pointer;
-				text-decoration: none;
-				font: 14px/100% Arial, Helvetica, sans-serif;
-				text-shadow: 0 1px 1px rgba(0,0,0,.3);
-				-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-				-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-				box-shadow: 0 1px 2px rgba(0,0,0,.2);
-			}
-			button:hover {
-				text-decoration: none;
-				background: #b61318;
-				background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
-				background: -moz-linear-gradient(top,  #c9151b,  #a11115);
-				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
-			}
-			button:active {
-				position: relative;
-				top: 1px;
-				color: #de898c;
-				background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
-				background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
-				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
-			}
-			#stopButton {
-				position: fixed;
-				z-index: 2;
-				bottom: 2px;
-				right: 2px;
-				width: 50px;
-				height: 50px;
-			}
-			#stopButton:active {
-				position: fixed;
-				top: auto;
-				bottom: 1px;
-			}
-		</style>
-	 
-	</head>
-	 
-	<body>
-		<div id="wrapper">
+		
+        <title>Parrot Soundboard</title>
+    </head>
+    <body ng-app="parrot">
+        <div id="wrapper">
 			<div id="header">P&nbsp;a&nbsp;r&nbsp;r&nbsp;o&nbsp;t</div>
 			<audio id="sound" src="" type="audio/mpeg"><b>Your browser does not support HTML5 audio. Please use a browser that does, such as Chrome or Firefox.</b></audio>
 			<button id="stopButton" onclick="stopSound();" touchstart="stopSound();">Stop</button>
-			<hr>
-			<div class="cat">
-				<div class="label">Miscellaneous</div>
-				<button onclick="playSound('./sounds/developers.mp3');" touchstart="playSound('./sounds/developers.mp3');">Developers!</button>
-				<button onclick="playSound('./sounds/ecks-bawks.mp3');" touchstart="playSound('./sounds/ecks-bawks.mp3');">Ecks-bawks!</button>
-				<button onclick="playSound('./sounds/how are you holding up.mp3');" touchstart="playSound('./sounds/how are you holding up.mp3');">How are you holding up?</button>
-				<button onclick="playSound('./sounds/itll make it go faster.mp3');" touchstart="playSound('./sounds/itll make it go faster.mp3');">It'll make it go faster!</button>
-				<button onclick="playSound('./sounds/need a really big gun.mp3');" touchstart="playSound('./sounds/need a really big gun.mp3');">Need a really big gun?!</button>
-				<button onclick="playSound('./sounds/ring ring ring.mp3');" touchstart="playSound('./sounds/ring ring ring.mp3');">Ring! Ring! Ring!</button>
-				<button onclick="playSound('./sounds/21.mp3');" touchstart="playSound('./sounds/21.mp3');">21!</button>
-				<button onclick="playSound('./sounds/wazzap.mp3');" touchstart="playSound('./sounds/wazzap.mp3');">WAZZAP?!?</button>
-				<div class="subcat">
-					<div class="sublabel">Reaction</div>
-					<button onclick="playSound('./sounds/censor.mp3');" touchstart="playSound('./sounds/censor.mp3');">*beep*!</button>
-					<button onclick="playSound('./sounds/rimshot.mp3');" touchstart="playSound('./sounds/rimshot.mp3');">Ba dum tsh!</button>
-					<button onclick="playSound('./sounds/DF laugh.mp3');" touchstart="playSound('./sounds/DF laugh.mp3');">*DF laugh*!</button>
-					<button onclick="playSound('./sounds/do it.mp3');" touchstart="playSound('./sounds/do it.mp3');">Do it! (Palpatine)</button>
-					<button onclick="playSound('./sounds/shia labeouf do it.mp3');" touchstart="playSound('./sounds/shia labeouf do it.mp3');">DO IT! (Shia LaBeouf)</button>
-					<button onclick="playSound('./sounds/inconceivable.mp3');" touchstart="playSound('./sounds/inconceivable.mp3');">Inconceivable!</button>
-					<button onclick="playSound('./sounds/its not just a console.mp3');" touchstart="playSound('./sounds/its not just a console.mp3');">It's not just a console, it's a language!</button>
-					<button onclick="playSound('./sounds/the price is right loseing horn.mp3');" touchstart="playSound('./sounds/the price is right loseing horn.mp3');">Losing horn!</button>
-					<button onclick="playSound('./sounds/no im not.mp3');" touchstart="playSound('./sounds/no im not.mp3');">No I'm not!</button>
-					<button onclick="playSound('./sounds/okay.mp3');" touchstart="playSound('./sounds/okay.mp3');">Okay!</button>
-					<button onclick="playSound('./sounds/instantrapairhorn.mp3');" touchstart="playSound('./sounds/instantrapairhorn.mp3');">Rap Air Horn</button>
-					<button onclick="playSound('./sounds/what killed the dinosaurs.mp3');" touchstart="playSound('./sounds/what killed the dinosaurs.mp3');">What killed the dinosaurs?</button>
-					<button onclick="playSound('./sounds/wilhelm scream.mp3');" touchstart="playSound('./sounds/wilhelm scream.mp3');">Wilhelm Scream</button>
-					<button onclick="playSound('./sounds/you keep using that word.mp3');" touchstart="playSound('./sounds/you keep using that word.mp3');">You keep using that word...</button>
-					<button onclick="playSound('./sounds/youre stupid.mp3');" touchstart="playSound('./sounds/youre stupid.mp3');">You're stupid!</button>
-					<button onclick="playSound('./sounds/wft boom.mp3');" touchstart="playSound('./sounds/wft boom.mp3');">WTF BOOM!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Wow</div>
-					<button onclick="playSound('./sounds/wow.mp3');" touchstart="playSound('./sounds/wow.mp3');">Wow!</button>
-					<button onclick="playSound('./sounds/UBER WOW.mp3');" touchstart="playSound('./sounds/UBER WOW.mp3');">UBER WOW!</button>
-					<button onclick="playSound('./sounds/wow beep.mp3');" touchstart="playSound('./sounds/wow beep.mp3');">Wow-*beep*!</button>
-				</div>
-			</div>
-			<hr>
-			<div class="cat">
-				<div class="label">Dota 2</div>
-				<div class="subcat">
-					<div class="sublabel">BTS Intro</div>
-					<button onclick="playSound('./sounds/liquid are doing it.mp3');" touchstart="playSound('./sounds/liquid are doing it.mp3');">Liquid are doing it!</button>
-					<button onclick="playSound('./sounds/theyre all dead.mp3');" touchstart="playSound('./sounds/theyre all dead.mp3');">They're all dead!</button>
-					<button onclick="playSound('./sounds/hes still alive.mp3');" touchstart="playSound('./sounds/hes still alive.mp3');">He's still alive!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">SingSing</div>
-					<button onclick="playSound('./sounds/singsing oh my god.mp3');" touchstart="playSound('./sounds/singsing oh my god.mp3');">Oh my gawd!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Axe</div>
-					<button onclick="playSound('./sounds/i said good day sir.mp3');" touchstart="playSound('./sounds/i said good day sir.mp3');">I said good day, sir!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Earth Spirit</div>
-					<button onclick="playSound('./sounds/you rock.mp3');" touchstart="playSound('./sounds/you rock.mp3');">You rock!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Lina</div>
-					<button onclick="playSound('./sounds/i thought we were steam friends.mp3');" touchstart="playSound('./sounds/i thought we were steam friends.mp3');">I thought we were Steam friends!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Lion</div>
-					<button onclick="playSound('./sounds/been to hell and back.mp3');" touchstart="playSound('./sounds/been to hell and back.mp3');">I've been to hell and back!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Meepo</div>
-					<button onclick="playSound('./sounds/frickin unbelievable.mp3');" touchstart="playSound('./sounds/frickin unbelievable.mp3');">Frickin' unbelievable!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Pudge</div>
-					<button onclick="playSound('./sounds/pudge i need a new pair of pants.mp3');" touchstart="playSound('./sounds/pudge i need a new pair of pants.mp3');">I need a new pair of pants!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Sniper</div>
-					<button onclick="playSound('./sounds/you got peeped.mp3');" touchstart="playSound('./sounds/you got peeped.mp3');">You got peeped!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Timbersaw</div>
-					<button onclick="playSound('./sounds/cut cut cut.mp3');" touchstart="playSound('./sounds/cut cut cut.mp3');">Cut! Cut! Cut!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Tiny</div>
-					<button onclick="playSound('./sounds/i gather no moss.mp3');" touchstart="playSound('./sounds/i gather no moss.mp3');">I gather no moss!</button>
-					<button onclick="playSound('./sounds/tiny coming in.mp3');" touchstart="playSound('./sounds/tiny coming in.mp3');">Tiny coming in!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Windranger</div>
-					<button onclick="playSound('./sounds/im fantastic.mp3');" touchstart="playSound('./sounds/im fantastic.mp3');">I'm fantastic!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Witch Doctor</div>
-					<button onclick="playSound('./sounds/ho ho oyeah.mp3');" touchstart="playSound('./sounds/ho ho oyeah.mp3');">Ho ho oyeah!</button>
-					<button onclick="playSound('./sounds/look at it go.mp3');" touchstart="playSound('./sounds/look at it go.mp3');">Look at it go!</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Wraith King</div>
-					<button onclick="playSound('./sounds/i now have all the sexy.mp3');" touchstart="playSound('./sounds/i now have all the sexy.mp3');">I now have all the sexy!</button>
-				</div>
-			</div>
-			<hr>
-			<div class="cat">
-				<div class="label">Eddie Izzard</div>
-				<button onclick="playSound('./sounds/ah i love the smell of europe in the morning.mp3');" touchstart="playSound('./sounds/ah i love the smell of europe in the morning.mp3');">Ah I love the smell of Europe in the morning!</button>
-				<button onclick="playSound('./sounds/cake or death.mp3');" touchstart="playSound('./sounds/cake or death.mp3');">Cake or death?!</button>
-				<button onclick="playSound('./sounds/cake please.mp3');" touchstart="playSound('./sounds/cake please.mp3');">Cake please!</button>
-				<button onclick="playSound('./sounds/ciao.mp3');" touchstart="playSound('./sounds/ciao.mp3');">Ciao!</button>
-				<button onclick="playSound('./sounds/death please.mp3');" touchstart="playSound('./sounds/death please.mp3');">Death please!</button>
-				<button onclick="playSound('./sounds/do you have a flag.mp3');" touchstart="playSound('./sounds/do you have a flag.mp3');">Do you have a flag?</button>
-				<button onclick="playSound('./sounds/fantastic.mp3');" touchstart="playSound('./sounds/fantastic.mp3');">Fantastic!</button>
-				<button onclick="playSound('./sounds/no flag no country.mp3');" touchstart="playSound('./sounds/no flag no country.mp3');">No flag, no country!</button>
-				<button onclick="playSound('./sounds/oh alright.mp3');" touchstart="playSound('./sounds/oh alright.mp3');">Oh alright!</button>
-				<button onclick="playSound('./sounds/so thats fun.mp3');" touchstart="playSound('./sounds/so thats fun.mp3');">So that's fun!</button>
-				<button onclick="playSound('./sounds/thats the rules.mp3');" touchstart="playSound('./sounds/thats the rules.mp3');">That's the rules!</button>
-				<button onclick="playSound('./sounds/this reminds me of our lord jesus.mp3');" touchstart="playSound('./sounds/this reminds me of our lord jesus.mp3');">This reminds me of our Lord Jesus...</button>
-				<button onclick="playSound('./sounds/very well.mp3');" touchstart="playSound('./sounds/very well.mp3');">Very well!</button>
-				<button onclick="playSound('./sounds/well done well done.mp3');" touchstart="playSound('./sounds/well done well done.mp3');">Well done! Well done!</button>
-				<button onclick="playSound('./sounds/what on earth is that.mp3');" touchstart="playSound('./sounds/what on earth is that.mp3');">What on Earth is that?!</button>
-				<button onclick="playSound('./sounds/wot are ya doin.mp3');" touchstart="playSound('./sounds/wot are ya doin.mp3');">Wot are ya doin'?!</button>
-				<button onclick="playSound('./sounds/you must get up very early in the morning.mp3');" touchstart="playSound('./sounds/you must get up very early in the morning.mp3');">You must get up very early in the morning!</button>
-			</div>
-			<hr>
-			<div class="cat">
-				<div class="label">Gibby</div>
-				<div class="subcat">
-					<div class="sublabel"></div>
-					<button onclick="playSound('./sounds/well there ya go.mp3');" touchstart="playSound('./sounds/well there ya go.mp3');">Well there ya go!</button>
-					<button onclick="playSound('./sounds/you gotta be code kittin me.mp3');" touchstart="playSound('./sounds/you gotta be code kittin me.mp3');">You gotta be code-kittin' me!</button>
-				</div>
-			</div>
-			<hr>
-			<div class="cat">
-				<div class="label">Halo</div>
-				<button onclick="playSound('./sounds/double kill.mp3');" touchstart="playSound('./sounds/double kill.mp3');">Double kill!</button>
-				<button onclick="playSound('./sounds/halo yay.mp3');" touchstart="playSound('./sounds/halo yay.mp3');">YAY!</button>
-			</div>
-			<hr>
-			<div class="cat">
-				<div class="label">Movies</div>
-				<button onclick="playSound('./sounds/B-E-A-utiful.mp3');" touchstart="playSound('./sounds/B-E-A-utiful.mp3');">B-E-A-utiful!</button>
-				<button onclick="playSound('./sounds/lightbulb.mp3');" touchstart="playSound('./sounds/lightbulb.mp3');">Lightbulb!</button>
-				<button onclick="playSound('./sounds/make like a tree.mp3');" touchstart="playSound('./sounds/make like a tree.mp3');">Make like a tree and get out!</button>
-				<button onclick="playSound('./sounds/mine.mp3');" touchstart="playSound('./sounds/mine.mp3');">Mine!</button>
-				<button onclick="playSound('./sounds/would you just shut up.mp3');" touchstart="playSound('./sounds/would you just shut up.mp3');">Would you just SHUT UP?!</button>
-				
-			</div>
-			<hr>
-			<div class="cat">
-				<div class="label">Rooster Teeth</div>
-				<div class="subcat">
-					<div class="sublabel">Achievement Hunter</div>
-					<button onclick="playSound('./sounds/cheese.mp3');" touchstart="playSound('./sounds/cheese.mp3');">CHEESE!</button>
-					<button onclick="playSound('./sounds/fish.mp3');" touchstart="playSound('./sounds/fish.mp3');">FISH!</button>
-					<button onclick="playSound('./sounds/flynt coal.mp3');" touchstart="playSound('./sounds/flynt coal.mp3');">Flynt coal!</button>
-					<button onclick="playSound('./sounds/free edgar.mp3');" touchstart="playSound('./sounds/free edgar.mp3');">Free Edgar!</button>
-					<button onclick="playSound('./sounds/gavins ringtone.mp3');" touchstart="playSound('./sounds/gavins ringtone.mp3');">Gavin's Ringtone</button>
-					<button onclick="playSound('./sounds/i did a dig down.mp3');" touchstart="playSound('./sounds/i did a dig down.mp3');">I did a dig down!</button>
-					<button onclick="playSound('./sounds/im goin cakeless.mp3');" touchstart="playSound('./sounds/im goin cakeless.mp3');">I'm goin' cakeless!</button>
-					<button onclick="playSound('./sounds/im gonna build a house.mp3');" touchstart="playSound('./sounds/im gonna build a house.mp3');">I'm gonna build a house.</button>
-					<button onclick="playSound('./sounds/im not saying cool im saying cool.mp3');" touchstart="playSound('./sounds/im not saying cool im saying cool.mp3');">I'm not saying cool, I'm saying cool...</button>
-					<button onclick="playSound('./sounds/just blaze.mp3');" touchstart="playSound('./sounds/just blaze.mp3');">Just blaze!</button>
-					<button onclick="playSound('./sounds/lets play.mp3');" touchstart="playSound('./sounds/lets play.mp3');">LET'S PLAY</button>
-					<button onclick="playSound('./sounds/mark nutt.mp3');" touchstart="playSound('./sounds/mark nutt.mp3');">Mark Nutt!</button>
-					<button onclick="playSound('./sounds/no way in no way out.mp3');" touchstart="playSound('./sounds/no way in no way out.mp3');">No way in! No way out!</button>
-					<button onclick="playSound('./sounds/noice.mp3');" touchstart="playSound('./sounds/noice.mp3');">Noice!</button>
-					<button onclick="playSound('./sounds/technical difficulties.mp3');" touchstart="playSound('./sounds/technical difficulties.mp3');">Technical Difficulties</button>
-					<button onclick="playSound('./sounds/were doing this again.mp3');" touchstart="playSound('./sounds/were doing this again.mp3');">We're doing this again?!</button>
-					<button onclick="playSound('./sounds/what am i doing.mp3');" touchstart="playSound('./sounds/what am i doing.mp3');">What am I doing?</button>
-					<button onclick="playSound('./sounds/wot.mp3');" touchstart="playSound('./sounds/wot.mp3');">Wot?!</button>
-					<button onclick="playSound('./sounds/ya pleb.mp3');" touchstart="playSound('./sounds/ya pleb.mp3');">Ya pleb!</button>
-					<button onclick="playSound('./sounds/yay.mp3');" touchstart="playSound('./sounds/yay.mp3');">YAY!</button>
-					<button onclick="playSound('./sounds/YEAH-YEAH-YEAH-YEAUH.mp3');" touchstart="playSound('./sounds/YEAH-YEAH-YEAH-YEAUH.mp3');">YEAH-YEAH-YEAH-YEAUH!</button>
-					<button onclick="playSound('./sounds/you want a bone.mp3');" touchstart="playSound('./sounds/you want a bone.mp3');">You want a bone?</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">Barbara Pun Reactions</div>
-					<button onclick="playSound('./sounds/barb reaction 4.mp3');" touchstart="playSound('./sounds/barb reaction 4.mp3');">Awww booo!</button>
-					<button onclick="playSound('./sounds/barb reaction 5.mp3');" touchstart="playSound('./sounds/barb reaction 5.mp3');">Barb dang it, Barb!</button>
-					<button onclick="playSound('./sounds/barb reaction 6.mp3');" touchstart="playSound('./sounds/barb reaction 6.mp3');"><em>Barb</em> dang it, Barb!</button>
-					<button onclick="playSound('./sounds/jack boo.mp3');" touchstart="playSound('./sounds/jack boo.mp3');">Booo!</button>
-					<button onclick="playSound('./sounds/jack boo 2.mp3');" touchstart="playSound('./sounds/jack boo 2.mp3');">BOOOO!</button>
-					<button onclick="playSound('./sounds/barb im so proud of you.mp3');" touchstart="playSound('./sounds/barb im so proud of you.mp3');">I'm so proud of you!</button>
-					<button onclick="playSound('./sounds/barb reaction 3.mp3');" touchstart="playSound('./sounds/barb reaction 3.mp3');">Phsst WOW!</button>
-					<button onclick="playSound('./sounds/barb reaction 1.mp3');" touchstart="playSound('./sounds/barb reaction 1.mp3');">There ya go!</button>
-					<button onclick="playSound('./sounds/barb reaction 2.mp3');" touchstart="playSound('./sounds/barb reaction 2.mp3');">Thank you, Barbara.</button>
-				</div>
-				<div class="subcat">
-					<div class="sublabel">RTAA</div>
-					<button onclick="playSound('./sounds/are you retarded or somethin.mp3');" touchstart="playSound('./sounds/are you retarded or somethin.mp3');">Are you retarded or somethin'?!</button>
-					<button onclick="playSound('./sounds/orange monkey eagle.mp3');" touchstart="playSound('./sounds/orange monkey eagle.mp3');">Don't do it, Gus!</button>
-					<button onclick="playSound('./sounds/fight fight fight kiss kiss.mp3');" touchstart="playSound('./sounds/fight fight fight kiss kiss.mp3');">Fight! Fight! Fight!</button>
-					<button onclick="playSound('./sounds/i am catbug.mp3');" touchstart="playSound('./sounds/i am catbug.mp3');">I am catbug!</button>
-				</div>
-			</div>
-			<hr>
-			<div class="cat">
-				<div class="label">Songs</div>
-				<button onclick="playSound('./sounds/boom.mp3');" touchstart="playSound('./sounds/boom.mp3');">BOOM!</button>
-				<button onclick="playSound('./sounds/davay davay.mp3');" touchstart="playSound('./sounds/davay davay.mp3');">давай! давай!</button>
-				<button onclick="playSound('./sounds/five hours.mp3');" touchstart="playSound('./sounds/five hours.mp3');">Five hours!</button>
-				<button onclick="playSound('./sounds/heeeeeeey.mp3');" touchstart="playSound('./sounds/heeeeeeey.mp3');">Heeeeeeey!</button>
-				<button onclick="playSound('./sounds/hi friend.mp3');" touchstart="playSound('./sounds/hi friend.mp3');">Hi Friend!</button>
-				<button onclick="playSound('./sounds/its time to slam.mp3');" touchstart="playSound('./sounds/its time to slam.mp3');">It's time to slam!</button>
-				<button onclick="playSound('./sounds/let the rain fall down.mp3');" touchstart="playSound('./sounds/let the rain fall down.mp3');">Let the rain fall down!</button>
-				<button onclick="playSound('./sounds/makin my way downtown.mp3');" touchstart="playSound('./sounds/makin my way downtown.mp3');">Makin' my way downtown!</button>
-				<button onclick="playSound('./sounds/murica.mp3');" touchstart="playSound('./sounds/murica.mp3');">'MURICA!</button>
-				<button onclick="playSound('./sounds/shes a maniac.mp3');" touchstart="playSound('./sounds/shes a maniac.mp3');">She's a maniac!</button>
-				<button onclick="playSound('./sounds/thats the way you do it.mp3');" touchstart="playSound('./sounds/thats the way you do it.mp3');">That's the way you do it!</button>
-				<button onclick="playSound('./sounds/whats goin on.mp3');" touchstart="playSound('./sounds/whats goin on.mp3');">What's goin' on?!</button>
-				<button onclick="playSound('./sounds/you spin me right round.mp3');" touchstart="playSound('./sounds/you spin me right round.mp3');">You spin me right round!</button>
-			</div>
-<!--
-			<div class="cat">
-				<div class="label"></div>
-				<div class="subcat">
-					<div class="sublabel"></div>
-					<button onclick="playSound('./sounds/.mp3');" touchstart="playSound('./sounds/.mp3');">!</button>
-				</div>
-			</div>
--->
+			<div ng-view></div>
+            <div id="footer">Created by <a href="http://twitter.com/EpicWolverine">EpicWolverine</a> - <a href="https://github.com/EpicWolverine/ParrotSoundboard">GitHub</a></div>
 		</div>
-	</body>
+    </body>
 </html>
