@@ -13,10 +13,10 @@
 		"src": "need a really big gun"},
 		{"text": "Ring! Ring! Ring!",
 		"src": "ring ring ring"},
-		{"text": "21!",
-		"src": "21"},
 		{"text": "WAZZAP?!?",
-		"src": "wazzap"}
+		"src": "wazzap"},
+		{"text": "21!",
+		"src": "21"}
 	],
 	"subcats": [
 		{"name": "Reaction",
@@ -31,12 +31,16 @@
 			"src": "do it"},
 			{"text": "DO IT! (Shia LaBeouf)",
 			"src": "shia labeouf do it"},
+			{"text": "GG!!!",
+			"src": "gg"},
 			{"text": "Inconceivable!",
 			"src": "inconceivable"},
 			{"text": "It's not just a console, it's a language!",
 			"src": "its not just a console"},
 			{"text": "Losing horn!",
 			"src": "the price is right loseing horn"},
+			{"text": "New record!",
+			"src": "smash new record"},
 			{"text": "No I'm not!",
 			"src": "no im not"},
 			{"text": "Okay!",
@@ -51,6 +55,8 @@
 			"src": "you keep using that word"},
 			{"text": "You're stupid!",
 			"src": "youre stupid"},
+			{"text": "Why you heff to be mad??",
+			"src": "why you heff to be mad"},
 			{"text": "WTF BOOM!",
 			"src": "wtf boom"}
 		]},
@@ -63,6 +69,17 @@
 			{"text": "Wow-*beep*!",
 			"src": "wow beep"}
 		]}
+	]},
+	{"name": "DJ Khaled",
+	"sounds": [
+		{"text": "Another one.",
+		"src": "dj khaled another one 1"},
+		{"text": "Another one.",
+		"src": "dj khaled another one 2"},
+		{"text": "Another one.",
+		"src": "dj khaled another one 3"},
+		{"text": "I appreciate that.",
+		"src": "dj khaled i appreciate that"}
 	]},
 	{"name": "Dota 2",
 	"subcats": [
@@ -144,6 +161,21 @@
 			{"text": "I now have all the sexy!",
 			"src": "i now have all the sexy"}
 		]}
+	]},
+	{"name": "Dunkey",
+	"sounds": [
+		{"text": "Anuda day, anuda play!",
+		"src": "dunkey anuda day anuda play"},
+		{"text": "Hear me roar.",
+		"src": "dunkey elderly black woman"},
+		{"text": "Here's the dinna!",
+		"src": "dunkey heres the dinna"},
+		{"text": "Hi there!",
+		"src": "overwatch winston hi there"},
+		{"text": "Jeopardizing this operation!",
+		"src": "dunkey jeopardizing this entire operation"},
+		{"text": "Ruining this operation!!",
+		"src": "dunkey you are ruining this entire operation"}
 	]},
 	{"name": "Eddie Izzard",
 	"sounds": [
@@ -266,6 +298,10 @@
 			"src": "barb reaction 5"},
 			{"text": "Barb dang it, Barb!!",
 			"src": "barb reaction 6"},
+			{"text": "Barb dang it, Barb!!!",
+			"src": "barb reaction 7"},
+			{"text": "Barb dang it, Barb!!!!",
+			"src": "barb reaction 8"},
 			{"text": "Booo!",
 			"src": "jack boo"},
 			{"text": "BOOOO!",
@@ -311,6 +347,8 @@
 		"src": "makin my way downtown"},
 		{"text": "'MURICA!",
 		"src": "murica"},
+		{"text": "Potato salad...",
+		"src": "john cena"},
 		{"text": "She's a maniac!",
 		"src": "shes a maniac"},
 		{"text": "That's the way you do it!",
