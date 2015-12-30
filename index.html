@@ -7,6 +7,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
         
         <link href="./css/stylesheet.css" rel="stylesheet" />
         
@@ -37,12 +38,12 @@
 			};
 		</script>
 		
-        <title>Parrot Soundboard</title>
+        <title>Parrot</title>
     </head>
     <body ng-app="parrot">
         <div id="wrapper">
 			<div id="header">P&nbsp;a&nbsp;r&nbsp;r&nbsp;o&nbsp;t</div>
-			<audio id="sound" src="" type="audio/mpeg"><b>Your browser does not support HTML5 audio. Please use a browser that does, such as Chrome or Firefox.</b></audio>
+			<audio id="sound" src="" type="audio/mpeg" autoplay><b>Your browser does not support HTML5 audio. Please use a browser that does, such as Chrome or Firefox.</b></audio>
 			<button id="stopButton" onclick="stopSound();" touchstart="stopSound();">Stop</button>
 			<div ng-view></div>
             <div id="footer">Created by <a href="http://twitter.com/EpicWolverine">EpicWolverine</a> - <a href="https://github.com/EpicWolverine/ParrotSoundboard">GitHub</a></div>
