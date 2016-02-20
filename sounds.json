@@ -164,18 +164,30 @@
 	]},
 	{"name": "Dunkey",
 	"sounds": [
+		{"text": "All you do is boondoggle!",
+		"src": "dunkey all you do is boondoggle"},
 		{"text": "Anuda day, anuda play!",
 		"src": "dunkey anuda day anuda play"},
+		{"text": "Determination.",
+		"src": "dunkey determination"},
+		{"text": "Determination!",
+		"src": "dunkey determination boss"},
 		{"text": "Hear me roar.",
 		"src": "dunkey elderly black woman"},
+		{"text": "He's a bozo!",
+		"src": "dunkey hes a bozo"},
 		{"text": "Here's the dinna!",
 		"src": "dunkey heres the dinna"},
 		{"text": "Hi there!",
 		"src": "overwatch winston hi there"},
 		{"text": "Jeopardizing this operation!",
 		"src": "dunkey jeopardizing this entire operation"},
+		{"text": "Mushroom dance.",
+		"src": "dunkey mushroom dance"},
 		{"text": "Ruining this operation!!",
-		"src": "dunkey you are ruining this entire operation"}
+		"src": "dunkey you are ruining this entire operation"},
+		{"text": "You deployed the dog.",
+		"src": "dunkey you deployed the dog"}
 	]},
 	{"name": "Eddie Izzard",
 	"sounds": [
@@ -227,6 +239,19 @@
 		"src": "double kill"},
 		{"text": "YAY!",
 		"src": "halo yay"}
+	]},
+	{"name": "John Mulaney",
+	"sounds": [
+		{"text": "Fan-tastic!",
+		"src": "john mulaney fantastic"},
+		{"text": "Holy sh-!",
+		"src": "john mulaney holy sh"},
+		{"text": "No, it's not.",
+		"src": "john mulaney no its not"},
+		{"text": "People went insane!",
+		"src": "john mulaney people went f-ing insane"},
+		{"text": "Yep, same sh- as always!",
+		"src": "john mulaney yep same as always"}
 	]},
 	{"name": "Movies",
 	"sounds": [
@@ -355,6 +380,8 @@
 		"src": "thats the way you do it"},
 		{"text": "What's goin' on?!",
 		"src": "whats goin on"},
+		{"text": "What. What.",
+		"src": "what what thrift shop"},
 		{"text": "You spin me right round!",
 		"src": "you spin me right round"}
 	]}
