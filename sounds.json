@@ -19,7 +19,7 @@
 		"src": "21"}
 	],
 	"subcats": [
-		{"name": "Reaction",
+		{"name": "Reaction™",
 		"sounds": [
 			{"text": "*beep*!",
 			"src": "censor"},
@@ -47,6 +47,10 @@
 			"src": "okay"},
 			{"text": "Rap Air Horn!",
 			"src": "instantrapairhorn"},
+			{"text": "REALLY!",
+			"src": "dustoff really"},
+			{"text": "So uncivilized.",
+			"src": "so uncivilized"},
 			{"text": "What killed the dinosaurs?",
 			"src": "what killed the dinosaurs"},
 			{"text": "Wilhelm Scream",
