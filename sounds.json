@@ -21,6 +21,8 @@
 	"subcats": [
 		{"name": "Reaction™",
 		"sounds": [
+			{"text": "Aww, geez, that's terrible!",
+			"src": "south park aww geez thats terrible"},
 			{"text": "*beep*!",
 			"src": "censor"},
 			{"text": "Ba dum tsh!",
