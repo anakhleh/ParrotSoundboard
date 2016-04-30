@@ -1,6 +1,8 @@
 {"cats": [
 	{"name": "Miscellaneous",
 	"sounds": [
+		{"text": "China!",
+		"src": "trump china"},
 		{"text": "Developers!",
 		"src": "developers"},
 		{"text": "Ecks-bawks!",
@@ -17,6 +19,8 @@
 		"src": "need a really big gun"},
 		{"text": "Ring! Ring! Ring!",
 		"src": "ring ring ring"},
+		{"text": "Taiwan numbah one!",
+		"src": "taiwan numbah one"},
 		{"text": "Thank Mr Skeltal",
 		"src": "doot doot"},
 		{"text": "Twenty sixteen!",
@@ -49,12 +53,10 @@
 			"src": "fire marshall bill cackle"},
 			{"text": "GG!!!",
 			"src": "gg"},
-			{"text": "Inconceivable!",
-			"src": "inconceivable"},
 			{"text": "It's not just a console, it's a language!",
 			"src": "its not just a console"},
-			{"text": "Losing horn!",
-			"src": "the price is right loseing horn"},
+			{"text": "Losing Horn",
+			"src": "the price is right losing horn"},
 			{"text": "New record!",
 			"src": "smash new record"},
 			{"text": "No I'm not!",
@@ -63,22 +65,16 @@
 			"src": "okay"},
 			{"text": "Rap Air Horn!",
 			"src": "instantrapairhorn"},
-			{"text": "REALLY!",
-			"src": "dustoff really"},
 			{"text": "Watch yer profanity!",
 			"src": "watch your profanity"},
-			{"text": "What killed the dinosaurs?",
-			"src": "what killed the dinosaurs"},
-			{"text": "Wilhelm Scream",
-			"src": "wilhelm scream"},
-			{"text": "You keep using that word...",
-			"src": "you keep using that word"},
-			{"text": "You're stupid!",
-			"src": "youre stupid"},
 			{"text": "Why you heff to be mad??",
 			"src": "why you heff to be mad"},
 			{"text": "WTF BOOM!",
-			"src": "wtf boom"}
+			"src": "wtf boom"},
+			{"text": "YEEAAAAAH!",
+			"src": "csi miami yeeeaaaaaah"},
+			{"text": "You're stupid!",
+			"src": "youre stupid"}
 		]},
 		{"name": "Wow",
 		"sounds": [
@@ -90,6 +86,15 @@
 			"src": "wow beep"}
 		]}
 	]},
+	{"name": "Boogie2988",
+	"sounds": [
+		{"text": "How do they know I'm fat?!",
+		"src": "boggie how do they know im fat"},
+		{"text": "I'm watching Ethan and Hill-a!",
+		"src": "boggie im watching ethan and hila"},
+		{"text": "Imma run it over with my car!",
+		"src": "boggie imma run it over with my car"}
+	]},
 	{"name": "DJ Khaled",
 	"sounds": [
 		{"text": "Another one.",
@@ -99,7 +104,9 @@
 		{"text": "Another one.",
 		"src": "dj khaled another one 3"},
 		{"text": "I appreciate that.",
-		"src": "dj khaled i appreciate that"}
+		"src": "dj khaled i appreciate that"},
+		{"text": "WOOOOOOO OOOOOOOO!.",
+		"src": "dj khaled jetski wooo"}
 	]},
 	{"name": "Dota 2",
 	"subcats": [
@@ -193,31 +200,57 @@
 		]}
 	]},
 	{"name": "Dunkey",
-	"sounds": [
-		{"text": "All you do is boondoggle!",
-		"src": "dunkey all you do is boondoggle"},
-		{"text": "Anuda day, anuda play!",
-		"src": "dunkey anuda day anuda play"},
-		{"text": "Determination.",
-		"src": "dunkey determination"},
-		{"text": "Determination!",
-		"src": "dunkey determination boss"},
-		{"text": "Hear me roar.",
-		"src": "dunkey elderly black woman"},
+    "sounds": [
 		{"text": "He's a bozo!",
 		"src": "dunkey hes a bozo"},
-		{"text": "Here's the dinna!",
-		"src": "dunkey heres the dinna"},
 		{"text": "Hi there!",
-		"src": "overwatch winston hi there"},
-		{"text": "Jeopardizing this operation!",
-		"src": "dunkey jeopardizing this entire operation"},
-		{"text": "Mushroom dance.",
-		"src": "dunkey mushroom dance"},
-		{"text": "Ruining this operation!!",
-		"src": "dunkey you are ruining this entire operation"},
-		{"text": "You deployed the dog.",
-		"src": "dunkey you deployed the dog"}
+		"src": "overwatch winston hi there"}
+	],
+	"subcats": [
+		{"name": "CS:GO",
+		"sounds": [
+			{"text": "Rip ya idiot!",
+			"src": "dunkey rip"},
+			{"text": "Rip again!",
+			"src": "dunkey rip again"},
+			{"text": "Shut up, dum-dum!",
+			"src": "dunkey shut up dum dum"}
+		]},
+		{"name": "Dundertale",
+		"sounds": [
+			{"text": "All you do is boondoggle!",
+            "src": "dunkey all you do is boondoggle"},
+            {"text": "Determination.",
+            "src": "dunkey determination"},
+            {"text": "Determination!",
+            "src": "dunkey determination boss"},
+            {"text": "Mushroom dance.",
+            "src": "dunkey mushroom dance"},
+            {"text": "You deployed the dog.",
+            "src": "dunkey you deployed the dog"}
+		]},
+		{"name": "LoL",
+		"sounds": [
+            {"text": "Anuda day, anuda play!",
+            "src": "dunkey anuda day anuda play"},
+            {"text": "Hear me roar.",
+            "src": "dunkey elderly black woman"},
+            {"text": "Here's the dinna!",
+            "src": "dunkey heres the dinna"},
+            {"text": "Jeopardizing this operation!",
+            "src": "dunkey jeopardizing this entire operation"},
+            {"text": "Ruining this operation!!",
+            "src": "dunkey you are ruining this entire operation"}
+		]},
+		{"name": "Soundboard within a Soundboard",
+		"sounds": [
+			{"text": "Hey guys it's me!",
+			"src": "dunkey hey guys its me"},
+			{"text": "I'll have the spaghetti and meatballs.",
+			"src": "dunkey ill have the spaghetti and meatballs"},
+			{"text": "Not even close baby!",
+			"src": "dunkey not even close baby"}
+		]}
 	]},
 	{"name": "Eddie Izzard",
 	"sounds": [
@@ -263,6 +296,58 @@
 		{"text": "You gotta be code-kittin' me!",
 		"src": "you gotta be code kittin me"}
 	]},
+	{"name": "H3H3",
+    "sounds": [
+			{"text": "Wow, Ethan. Great moves.",
+			"src": "h3h3 michelle obama great moves"}
+    ],
+	"subcats": [
+		{"name": "Bradberry'ed",
+		"sounds": [
+			{"text": "I'M ETHAN BRADBERRY!",
+			"src": "h3h3 imethanbradberry"}
+		]},
+		{"name": "Dustoff",
+		"sounds": [
+			{"text": "REALLY!",
+			"src": "h3h3 dustoff really"}
+		]},
+		{"name": "Epic Dad Pranks",
+		"sounds": [
+			{"text": "I'm a funny guy!",
+			"src": "h3h3 im a funny guy"}
+		]},
+		{"name": "Game Crazy",
+		"sounds": [
+			{"text": "Down here in the hizzouse, you know, the heezy.",
+			"src": "h3h3 game crazy hizzouse heezy"},
+			{"text": "Getting extremely jiggy with it.",
+			"src": "h3h3 game crazy jiggy with it"},
+			{"text": "Slinging the bling-bling to get that paper.",
+			"src": "h3h3 game crazy bling-bling paper"},
+			{"text": "That was the bomb-diggity.",
+			"src": "h3h3 game crazy rye-dog bomb-diggity"},
+			{"text": "That was krunk.",
+			"src": "h3h3 game crazy that was krunk"}
+		]},
+		{"name": "Papa John",
+		"sounds": [
+			{"text": "Sodie pops.",
+			"src": "h3h3 papa johns sodie pops"}
+		]},
+		{"name": "Tai Lopez",
+		"sounds": [
+			{"text": "Fuel units.",
+			"src": "h3h3 tai lopez fuel units"},
+			{"text": "KNAWLEDGE.",
+			"src": "h3h3 tai lopez knawledge"}
+		]},
+		{"name": "Vape",
+		"sounds": [
+			{"text": "Vape nayshon!",
+			"src": "h3h3 vape nayshon"}
+		]}
+	]},
 	{"name": "Halo",
 	"sounds": [
 		{"text": "Double kill!",
@@ -291,27 +376,68 @@
 		"src": "ltt wan show the glitches give it character"}
 	]},
 	{"name": "Movies",
-	"sounds": [
-		{"text": "B-E-A-utiful!",
-		"src": "B-E-A-utiful"},
-        {"text": "Coincidence? I think not!",
-        "src": "coincidence i think not"},
-		{"text": "Do or do not.",
-		"src": "star wars yoda do or do not there is no try"},
-		{"text": "Lightbulb!",
-		"src": "lightbulb"},
-		{"text": "Make like a tree and get out!",
-		"src": "make like a tree"},
-		{"text": "Maniacal laugh!",
-		"src": "the muppets maniacal laugh"},
-		{"text": "Mine!",
-		"src": "mine"},
-        {"text": "So uncivilized.",
-        "src": "so uncivilized"},
-		{"text": "Would you just SHUT UP?!",
-		"src": "would you just shut up"},
-		{"text": "You threw off my groove!",
-		"src": "you threw off my groove"}
+	"subcats": [
+        {"name": "BttF",
+		"sounds": [
+            {"text": "Make like a tree and get out!",
+            "src": "make like a tree"}
+		]},
+        {"name": "Batman",
+		"sounds": [
+            {"text": "What killed the dinosaurs?",
+            "src": "what killed the dinosaurs"}
+		]},
+        {"name": "Bruce Almighty",
+		"sounds": [
+            {"text": "B-E-A-utiful!",
+            "src": "B-E-A-utiful"}
+		]},
+        {"name": "Despicable Me",
+		"sounds": [
+            {"text": "Lightbulb!",
+            "src": "lightbulb"}
+		]},
+        {"name": "The Emperor's New Groove",
+		"sounds": [
+            {"text": "You threw off my groove!",
+            "src": "you threw off my groove"}
+		]},
+        {"name": "Finding Nemo",
+		"sounds": [
+            {"text": "Mine!",
+            "src": "mine"},
+            {"text": "Would you just SHUT UP?!",
+            "src": "would you just shut up"}
+		]},
+		{"name": "The Incredibles",
+		"sounds": [
+            {"text": "Coincidence? I think not!",
+            "src": "coincidence i think not"}
+		]},
+        {"name": "The Muppets",
+		"sounds": [
+            {"text": "Maniacal laugh!", 
+            "src": "the muppets maniacal laugh"}
+		]},
+        {"name": "The Princess Bride",
+		"sounds": [
+            {"text": "Inconceivable!",
+            "src": "inconceivable"},
+            {"text": "You keep using that word...",
+            "src": "you keep using that word"}
+		]},
+        {"name": "Star Wars",
+		"sounds": [
+            {"text": "Do or do not.",
+            "src": "star wars yoda do or do not there is no try"},
+            {"text": "So uncivilized.",
+            "src": "so uncivilized"}
+		]},
+        {"name": "Tropes",
+		"sounds": [
+            {"text": "Wilhelm Scream",
+            "src": "wilhelm scream"}
+		]}
 	]},
 	{"name": "Rooster Teeth",
 	"subcats": [
@@ -381,12 +507,14 @@
 		]},
         {"name": "Dumbest Moment",
 		"sounds": [
-			{"text": "Gavin's Ringtone!",
+			{"text": "Gavin's Ringtone",
 			"src": "gavins ringtone"},
 			{"text": "I'm feelin' lucky!",
 			"src": "gavin free im feelin lucky"},
 			{"text": "I'm not saying cool, I'm saying cool...",
 			"src": "im not saying cool im saying cool"},
+			{"text": "What is \"Game Night!\"?",
+			"src": "ah gavin what is game night"},
 			{"text": "Wot?!",
 			"src": "wot"},
 			{"text": "Ya pleb!",
@@ -442,5 +570,10 @@
 		"src": "what what thrift shop"},
 		{"text": "You spin me right round!",
 		"src": "you spin me right round"}
+	]},
+    {"name": "That Mitchell and Webb Look",
+	"sounds": [
+		{"text": "Oh and that's a bad miss.",
+		"src": "tmawl oh and thats a bad miss"}
 	]}
 ]}

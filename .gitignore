@@ -53,5 +53,7 @@ Temporary Items
 # Project Files
 # =========================
 
-# Exclude external libraries
+# External libraries
 js/libraries/
+# Songs queued to be added
+queue/

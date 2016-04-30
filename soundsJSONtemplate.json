@@ -1,0 +1,24 @@
+,
+	{"name": "CatName",
+	"sounds": [
+		{"text": "text!",
+		"src": "src"},
+		{"text": "text!",
+		"src": "src"}
+	],
+	"subcats": [
+		{"name": "SubCatName1",
+		"sounds": [
+			{"text": "text!",
+			"src": "src"},
+			{"text": "text!",
+			"src": "src"}
+		]},
+		{"name": "SubCatName2",
+		"sounds": [
+			{"text": "text!",
+			"src": "src"},
+			{"text": "text!",
+			"src": "src"}
+		]}
+	]}
