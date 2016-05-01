@@ -23,6 +23,16 @@ hr {
 	width: 75%;
 	border: solid 1px;
 }
+a{
+	color: #999999;
+	font-size: 14px;
+}
+a:hover{
+	color: #AAAAAA;
+}
+a:active{
+	color: #888888;
+}
 .cat {
 	margin-bottom: 5pt;
 }

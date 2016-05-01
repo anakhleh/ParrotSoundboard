@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE HTML>
-<html>
+<html ng-app="parrot" ng-controller="MainController">
     <head>
 		<link rel="shortcut icon" href="./favicon.ico" />
 		<link rel="apple-touch-icon" href="./apple-touch-icon.png">
@@ -21,13 +21,15 @@
         <script src="./js/app.js"></script>
         <!-- Controllers -->
         <script src="./js/controllers/HomeController.js"></script>
-        <!-- <script src="./js/controllers/PhotoController.js"></script>   -->
+        <script src="./js/controllers/MainController.js"></script>
+        <script src="./js/controllers/SoundController.js"></script>
         <!-- Directives -->
         <script src="./js/directives/cat.js"></script>
         <script src="./js/directives/ngTouchstart.js"></script>
         <script src="./js/directives/subcat.js"></script>
         <script src="./js/directives/soundButton.js"></script>
         <!-- Services -->
+        <script src="./js/services/Page.js"></script>
         <script src="./js/services/sounds.js"></script>
         
 		<script type="text/javascript">
@@ -38,9 +40,9 @@
 			};
 		</script>
 		
-        <title>Parrot</title>
+        <title ng-bind="Page.title()">Parrot</title>
     </head>
-    <body ng-app="parrot">
+    <body>
         <div id="wrapper">
 			<div id="header">P&nbsp;a&nbsp;r&nbsp;r&nbsp;o&nbsp;t</div>
 			<audio id="sound" src="" type="audio/mpeg" autoplay><b>Your browser does not support HTML5 audio. Please use a browser that does, such as Chrome or Firefox.</b></audio>

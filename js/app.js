@@ -6,13 +6,18 @@ app.config(function ($routeProvider) {
             controller: 'HomeController',   //use this controller
             templateUrl: './views/home.html'  //and this template for ng-view
         })
-        /* .when('/photos/:id', {
-            controller: 'PhotoController',
-            templateUrl: './views/photo.html'
+        .when('/cat/:cat', {
+            controller: 'SoundController',
+            templateUrl: './views/sound.html'
         })
-        .when('/photos/-1', {
-            redirectTo: '/'
-        }) */
+        .when('/cat/:cat/:subcat', {
+            controller: 'SoundController',
+            templateUrl: './views/sound.html'
+        })
+        .when('/sound/:filename', {
+            controller: 'SoundController',
+            templateUrl: './views/sound.html'
+        })
         .otherwise({
             redirectTo: '/'
         });
