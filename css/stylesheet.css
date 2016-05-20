@@ -27,12 +27,34 @@ hr {
 	width: 75%;
 	border: solid 1px;
 }
+a{
+	color: #999999;
+	font-size: 14px;
+}
+a:hover{
+	color: #AAAAAA;
+}
+a:active{
+	color: #888888;
+}
+.message {
+	color: #999999;
+	font-size: 14px;
+}
 .cat {
 	margin-bottom: 5pt;
 }
 .label {
 	color: #999999;
 	font-size: 18px;
+}
+.label a{
+	color: #999999;
+	font-size: 18px;
+	text-decoration: none;
+}
+.label a:hover{
+	text-decoration: underline;
 }
 .subcat {
 	display: inline-block;
@@ -45,6 +67,14 @@ hr {
 	color: #AAAAAA;
 	font-size: 14px;
 	text-align: left;
+}
+.sublabel a{
+	color: #AAAAAA;
+	font-size: 14px;
+	text-decoration: none;
+}
+.sublabel a:hover{
+	text-decoration: underline;
 }
 button {
 	vertical-align: middle;
@@ -95,4 +125,23 @@ button:active {
 	position: fixed;
 	top: auto;
 	bottom: 1px;
+}
+#clipboard-container {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  /*width: 100px;
+  height: 20px;*/
+  z-index: 100;
+  display: none;
+  opacity: 0;
+}
+#clipboard {
+  width: 1px;
+  height: 1px;
+  /*width: 100px;
+  height: 20px;*/
+  padding: 0px;
 }
