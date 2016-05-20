@@ -9,6 +9,10 @@ body {
 	color: #888888;
 	font-size: 36px;
 }
+.spacedletters {
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing*/
+	letter-spacing: 0.5ch; /*half the width of the 0 character in that font*/
+}
 #footer {
 	color: #AAAAAA;
 	font-size: 12px;
