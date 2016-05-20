@@ -7,12 +7,12 @@ app.config(function ($routeProvider) {
             templateUrl: './views/home.html'  //and this template for ng-view
         })
         .when('/cat/:cat', {
-            controller: 'SoundController',
-            templateUrl: './views/sound.html'
+            controller: 'CatController',
+            templateUrl: './views/cat.html'
         })
         .when('/cat/:cat/:subcat', {
-            controller: 'SoundController',
-            templateUrl: './views/sound.html'
+            controller: 'CatController',
+            templateUrl: './views/subcat.html'
         })
         .when('/sound/:filename', {
             controller: 'SoundController',
