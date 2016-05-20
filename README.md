@@ -8,4 +8,4 @@ It is named Parrot because, like a parrot, it can play back short sound bites on
 Usage
 ===========
 
-Parrot is pure HTML, CSS, and JavaScript. Simply download the entire project and open index.html.
+Parrot is written in HTML, CSS, and AngularJS. Simply download the entire project and open index.html.
