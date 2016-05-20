@@ -37,6 +37,10 @@ a:hover{
 a:active{
 	color: #888888;
 }
+.message {
+	color: #999999;
+	font-size: 14px;
+}
 .cat {
 	margin-bottom: 5pt;
 }
