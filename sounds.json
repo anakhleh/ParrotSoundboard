@@ -188,6 +188,8 @@
 		]},
 		{"name": "Witch Doctor",
 		"sounds": [
+			{"text": "Ahhh, thanks man!",
+			"src": "dota witch doctor ahhh thanks man"},
 			{"text": "Ho ho oyeah!",
 			"src": "ho ho oyeah"},
 			{"text": "Look at it go!",
@@ -196,7 +198,9 @@
 		{"name": "Wraith King",
 		"sounds": [
 			{"text": "I now have all the sexy!",
-			"src": "i now have all the sexy"}
+			"src": "i now have all the sexy"},			
+			{"text": "Now your king is balling out of control!",
+			"src": "dota wraith king now your king is balling out of control"}
 		]}
 	]},
 	{"name": "Dunkey",
@@ -531,6 +535,17 @@
 			{"text": "I am catbug!",
 			"src": "i am catbug"}
 		]}
+	]},
+	{"name": "Screencheat",
+	"sounds": [
+		{"text": "Hmm fiddlesticks!",
+		"src": "screencheat hmm fiddlesticks"},
+		{"text": "How embarrassing!",
+		"src": "screencheat how embarrassing"},
+		{"text": "Whoops! Butterfingers!",
+		"src": "screencheat whoops butterfingers"},
+		{"text": "Whoopsie daisy!",
+		"src": "screencheat whoopsie daisy"}
 	]},
 	{"name": "Songs",
 	"sounds": [
