@@ -60,8 +60,6 @@ a:active{
 	display: inline-block;
 	position: relative;
 	z-index: 1;
-	margin-left: auto;
-	margin-right: auto;
 }
 .sublabel {
 	color: #AAAAAA;
@@ -128,6 +126,12 @@ a:active{
 }
 .soundButtonContainer {
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/width*/
+	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+	width: -moz-max-content;    /* Firefox/Gecko */
+	width: -webkit-max-content; /* Chrome */
 }
 .directLinkIcon {
 	position: absolute;
