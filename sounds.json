@@ -37,6 +37,8 @@
 	"subcats": [
 		{"name": "Reaction™",
 		"sounds": [
+			{"text": "And boom goes the dynamite.",
+			"src": "and boom goes the dynamite"},
 			{"text": "Aww, geez, that's terrible!",
 			"src": "south park aww geez thats terrible"},
 			{"text": "*beep*!",
@@ -63,6 +65,8 @@
 			"src": "no im not"},
 			{"text": "Okay!",
 			"src": "okay"},
+			{"text": "OMG AN INSANE GOAL!",
+			"src": "omg an insane goal"},
 			{"text": "Rap Air Horn!",
 			"src": "instantrapairhorn"},
 			{"text": "Watch yer profanity!",
@@ -206,9 +210,7 @@
 	{"name": "Dunkey",
     "sounds": [
 		{"text": "He's a bozo!",
-		"src": "dunkey hes a bozo"},
-		{"text": "Hi there!",
-		"src": "overwatch winston hi there"}
+		"src": "dunkey hes a bozo"}
 	],
 	"subcats": [
 		{"name": "CS:GO",
@@ -245,6 +247,13 @@
             "src": "dunkey jeopardizing this entire operation"},
             {"text": "Ruining this operation!!",
             "src": "dunkey you are ruining this entire operation"}
+		]},
+		{"name": "Overwatch",
+		"sounds": [
+			{"text": "Fool me once...",
+			"src": "dunkey fool me once"},
+			{"text": "Hi there!",
+			"src": "overwatch winston hi there"}
 		]},
 		{"name": "Soundboard within a Soundboard",
 		"sounds": [
