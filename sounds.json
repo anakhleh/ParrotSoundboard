@@ -348,8 +348,8 @@
 		]},
 		{"name": "Vape",
 		"sounds": [
-			{"text": "Vape nayshon!",
-			"src": "h3h3 vape nayshon"}
+			{"text": "Vape naysh, y'all!",
+			"src": "h3h3 vape naysh yall"}
 		]}
 	]},
 	{"name": "Halo",
@@ -358,6 +358,12 @@
 		"src": "double kill"},
 		{"text": "YAY!",
 		"src": "halo yay"}
+	]},
+	{"name": "IDARB",
+	"displayName": "#IDARB",
+	"sounds": [
+		{"text": "It's a turnover!",
+		"src": "idarb its a turnover"}
 	]},
 	{"name": "John Mulaney",
 	"sounds": [
@@ -442,6 +448,11 @@
             {"text": "Wilhelm Scream",
             "src": "wilhelm scream"}
 		]}
+	]},
+	{"name": "Pit People",
+	"sounds": [
+		{"text": "OOPS! Butterfingers!",
+		"src": "pit people oops butterfingers"}
 	]},
 	{"name": "Rooster Teeth",
 	"subcats": [
@@ -590,5 +601,10 @@
 	"sounds": [
 		{"text": "Oh and that's a bad miss.",
 		"src": "tmawl oh and thats a bad miss"}
+	]},
+	{"name": "Until Dawn",
+	"sounds": [
+		{"text": "Boom. Butterfly Effect.",
+		"src": "until dawn boom butterfly effect"}
 	]}
 ]}

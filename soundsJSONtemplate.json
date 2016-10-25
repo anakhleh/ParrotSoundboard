@@ -1,5 +1,6 @@
 ,
 	{"name": "CatName",
+	"displayName": "", //optional; displayed instead of name
 	"sounds": [
 		{"text": "text!",
 		"src": "src"},
