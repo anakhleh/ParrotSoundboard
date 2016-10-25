@@ -138,3 +138,9 @@ a:active{
 	bottom: 0px;
 	right: 0px;
 }
+
+@media (min-width: 769px){
+	body {
+		width: 75%;
+	}
+}
