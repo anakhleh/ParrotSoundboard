@@ -57,3 +57,5 @@ Temporary Items
 js/libraries/
 # Songs queued to be added
 queue/
+# VSCode files
+.vscode/
