@@ -9,6 +9,8 @@
 		"src": "ecks-bawks"},
 		{"text": "How are you holding up?",
 		"src": "how are you holding up"},
+		{"text": "I can't believe you've done this.",
+		"src": "i cant believe youve done this"},
 		{"text": "I gotta have more cowbell!",
 		"src": "snl i gotta have more cowbell"},
 		{"text": "It'll make it go faster!",
@@ -389,8 +391,17 @@
 		{"text": "Yep, same sh- as always!",
 		"src": "john mulaney yep same as always"}
 	]},
+	{"name": "JonTron",
+	"sounds": [
+		{"text": "10 out of 10! Best game!",
+		"src": "jontron 10 out of 10 best game"},
+		{"text": "I ain't havin' that shit!",
+		"src": "jontron i aint havin that shit"}
+	]},
     {"name": "LinusTechTips",
 	"sounds": [
+		{"text": "Chinese Taipei",
+		"src": "ltt taren chinese taipei"},
 		{"text": "JUST WAIT!!",
 		"src": "ltt linus just wait"},
 		{"text": "The glitches give it character.",
