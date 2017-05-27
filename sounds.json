@@ -118,14 +118,18 @@
 	]},
 	{"name": "Dota 2",
 	"subcats": [
-		{"name": "BTS Intro",
+		{"name": "Commentary",
 		"sounds": [
+			{"text": "Brutal. Savage. Rekt.",
+			"src": "dota brutal savage rekt"},
+			{"text": "He's still alive!",
+			"src": "hes still alive"},
+			{"text": "It's a disastah!",
+			"src": "dota its a disastah"},
 			{"text": "Liquid are doing it!",
 			"src": "liquid are doing it"},
 			{"text": "They're all dead!",
-			"src": "theyre all dead"},
-			{"text": "He's still alive!",
-			"src": "hes still alive"}
+			"src": "dota theyre all dead"}
 		]},
 		{"name": "SingSing",
 		"sounds": [
@@ -395,6 +399,8 @@
 	"sounds": [
 		{"text": "10 out of 10! Best game!",
 		"src": "jontron 10 out of 10 best game"},
+		{"text": "Fool me once...",
+		"src": "jontron fool me once"},
 		{"text": "I ain't havin' that shit!",
 		"src": "jontron i aint havin that shit"}
 	]},
@@ -598,11 +604,13 @@
 		"src": "he-man hey"},
 		{"text": "Hi Friend!",
 		"src": "hi friend"},
+		{"text": "Initial D",
+		"src": "initial d deja vu"},
 		{"text": "It's time to slam!",
 		"src": "its time to slam"},
 		{"text": "Let the rain fall down!",
 		"src": "let the rain fall down"},
-		{"text": "Makin' my way downtown!",
+		{"text": "Makin' my way downtown.",
 		"src": "makin my way downtown"},
 		{"text": "'MURICA!",
 		"src": "murica"},
