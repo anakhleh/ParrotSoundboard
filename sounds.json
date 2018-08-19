@@ -39,6 +39,13 @@
 		"src": "21"}
 	],
 	"subcats": [
+		{"name": "Alexa",
+		"sounds": [
+			{"text": "Alexa, play Despacito (RIP headphones).",
+			"src": "alexa play despacito reposted in wrong neighborhood"},
+			{"text": "Omg, this is so sad...",
+			"src": "omg this is so sad alexa play despacito"}
+		]},
 		{"name": "Reaction™",
 		"sounds": [
 			{"text": "And boom goes the dynamite.",
@@ -406,12 +413,41 @@
 	]},
     {"name": "LinusTechTips",
 	"sounds": [
-		{"text": "Chinese Taipei",
-		"src": "ltt taren chinese taipei"},
+		{"text": "AMD NO!",
+		"src": "ltt luke wan show luke amd no"},
 		{"text": "JUST WAIT!!",
 		"src": "ltt linus just wait"},
+		{"text": "Please standby while Linus installs the device.",
+		"src": "ltt linus quadjoy installing device"},
 		{"text": "The glitches give it character.",
 		"src": "ltt wan show the glitches give it character"}
+	],
+	"subcats": [
+		{"name": "But Can it Run Crysis?",
+		"sounds": [
+			{"text": "Linus: But can it run Crysis?",
+			"src": "ltt linus but can it run crysis"},
+			{"text": "Luke: But can it run Crysis?",
+			"src": "ltt luke but can it run crysis"}
+		]},
+		{"name": "Squarespace",
+		"sounds": [
+			{"text": "Linus builds it beautiful.",
+			"src": "ltt linus builds it beautiful"},
+			{"text": "Luke builds it beautiful.",
+			"src": "ltt luke builds it beautiful"}
+		]},
+		{"name": "Taran",
+		"sounds": [
+			{"text": "As the macro king, this pleases me.",
+			"src": "ltt taran as the macro king this pleases me"},
+			{"text": "Chinese Taipei",
+			"src": "ltt taren chinese taipei"},
+			{"text": "The macro solution for the everyman!",
+			"src": "ltt taran the ultimate macro solution for the everyman"},
+			{"text": "This is a problem that windows has had...",
+			"src": "ltt taran this is a problem Windows has had for its entire lifespan"}
+		]}
 	]},
 	{"name": "Movies",
 	"subcats": [
