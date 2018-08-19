@@ -39,6 +39,13 @@
 		"src": "21"}
 	],
 	"subcats": [
+		{"name": "Alexa",
+		"sounds": [
+			{"text": "Alexa, play Despacito (RIP headphones).",
+			"src": "alexa play despacito reposted in wrong neighborhood"},
+			{"text": "Omg, this is so sad...",
+			"src": "omg this is so sad alexa play despacito"}
+		]},
 		{"name": "Reaction™",
 		"sounds": [
 			{"text": "And boom goes the dynamite.",
