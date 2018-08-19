@@ -406,40 +406,40 @@
 	]},
     {"name": "LinusTechTips",
 	"sounds": [
+		{"text": "AMD NO!",
+		"src": "ltt luke wan show luke amd no"},
 		{"text": "JUST WAIT!!",
 		"src": "ltt linus just wait"},
-		{"text": "The glitches give it character.",
-		"src": "ltt wan show the glitches give it character"},
-		{"text": "Please standby while Linus installs the device",
+		{"text": "Please standby while Linus installs the device.",
 		"src": "ltt linus quadjoy installing device"},
-		{"text": "AMD NO!",
-		"src": "ltt luke wan show luke amd no"}
+		{"text": "The glitches give it character.",
+		"src": "ltt wan show the glitches give it character"}
 	],
 	"subcats": [
-		{"name": "Taran",
+		{"name": "But Can it Run Crysis?",
 		"sounds": [
-			{"text": "Chinese Taipei",
-			"src": "ltt taren chinese taipei"},
-			{"text": "As the macro king, this pleases me",
-			"src": "ltt taran as the macro king this pleases me"},
-			{"text": "The macro solution for the everyman",
-			"src": "ltt taran the ultimate macro solution for the everyman"},
-			{"text": "Long-standing windows problem",
-			"src": "ltt taran this is a problem Windows has had for its entire lifespan"}
+			{"text": "Linus: But can it run Crysis?",
+			"src": "ltt linus but can it run crysis"},
+			{"text": "Luke: But can it run Crysis?",
+			"src": "ltt luke but can it run crysis"}
 		]},
 		{"name": "Squarespace",
 		"sounds": [
-			{"text": "Luke Builds it Beautiful",
-			"src": "ltt luke builds it beautiful"},
-			{"text": "Linus Builds it Beautiful",
-			"src": "ltt linus builds it beautiful"}
+			{"text": "Linus builds it beautiful.",
+			"src": "ltt linus builds it beautiful"},
+			{"text": "Luke builds it beautiful.",
+			"src": "ltt luke builds it beautiful"}
 		]},
-		{"name": "But Can it Run Crysis?",
+		{"name": "Taran",
 		"sounds": [
-			{"text": "Luke: Can it run Crysis?",
-			"src": "ltt luke but can it run crysis"},
-			{"text": "Linus: Can it run Crysis?",
-			"src": "ltt linus but can it run crysis"}
+			{"text": "As the macro king, this pleases me.",
+			"src": "ltt taran as the macro king this pleases me"},
+			{"text": "Chinese Taipei",
+			"src": "ltt taren chinese taipei"},
+			{"text": "The macro solution for the everyman!",
+			"src": "ltt taran the ultimate macro solution for the everyman"},
+			{"text": "This is a problem that windows has had...",
+			"src": "ltt taran this is a problem Windows has had for its entire lifespan"}
 		]}
 	]},
 	{"name": "Movies",
