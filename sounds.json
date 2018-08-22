@@ -7,6 +7,8 @@
 		"src": "developers"},
 		{"text": "Ecks-bawks!",
 		"src": "ecks-bawks"},
+		{"text": "Happy feet! Wombo combo!",
+		"src": "happy feet wombo combo"},
 		{"text": "How are you holding up?",
 		"src": "how are you holding up"},
 		{"text": "I can't believe you've done this.",
@@ -66,6 +68,10 @@
 			"src": "fire marshall bill cackle"},
 			{"text": "GG!!!",
 			"src": "gg"},
+			{"text": "Hey, that's pretty good.",
+			"src": "idubbbz hey thats pretty good"},
+			{"text": "I love it!",
+			"src": "wkyk i love it"},
 			{"text": "It's not just a console, it's a language!",
 			"src": "its not just a console"},
 			{"text": "Losing Horn",
@@ -80,25 +86,20 @@
 			"src": "omg an insane goal"},
 			{"text": "Rap Air Horn!",
 			"src": "instantrapairhorn"},
+			{"text": "Sir! Get your mind out of the gutter!",
+			"src": "wkyk sir get your mind out of the gutter"},
 			{"text": "Watch yer profanity!",
 			"src": "watch your profanity"},
 			{"text": "Why you heff to be mad??",
 			"src": "why you heff to be mad"},
+			{"text": "Wow-*beep*!",
+			"src": "wow beep"},
 			{"text": "WTF BOOM!",
 			"src": "wtf boom"},
 			{"text": "YEEAAAAAH!",
 			"src": "csi miami yeeeaaaaaah"},
 			{"text": "You're stupid!",
 			"src": "youre stupid"}
-		]},
-		{"name": "Wow",
-		"sounds": [
-			{"text": "Wow!",
-			"src": "wow"},
-			{"text": "UBER WOW!",
-			"src": "UBER WOW"},
-			{"text": "Wow-*beep*!",
-			"src": "wow beep"}
 		]}
 	]},
 	{"name": "Boogie2988",
@@ -129,14 +130,30 @@
 		"sounds": [
 			{"text": "Brutal. Savage. Rekt.",
 			"src": "dota brutal savage rekt"},
+			{"text": "Easiest money of my life!",
+			"src": "dota easiest money of my life"},
 			{"text": "He's still alive!",
 			"src": "hes still alive"},
+			{"text": "I... uh... That was questionable at the... at the best.",
+			"src": "dota i uh that was questionable at the at the best"},
+			{"text": "I can't believe what we're seeing. What just happened?",
+			"src": "dota what just happened"},
 			{"text": "It's a disastah!",
 			"src": "dota its a disastah"},
+			{"text": "Lakad Matataaag! Normalin, Normalin.",
+			"src": "dota lakad matataaag normalin normalin"},
 			{"text": "Liquid are doing it!",
 			"src": "liquid are doing it"},
+			{"text": "Nobody has ever done that in the history of Dota!",
+			"src": "dota nobody has ever done that in the history of dota"},
+			{"text": "That's playing to win, baby!",
+			"src": "dota thats playing to win baby"},
 			{"text": "They're all dead!",
-			"src": "dota theyre all dead"}
+			"src": "dota theyre all dead"},
+			{"text": "Waow!",
+			"src": "dota waow"},
+			{"text": "WAOW!!",
+			"src": "dota waow earrape"}
 		]},
 		{"name": "SingSing",
 		"sounds": [
@@ -225,7 +242,9 @@
 	{"name": "Dunkey",
     "sounds": [
 		{"text": "He's a bozo!",
-		"src": "dunkey hes a bozo"}
+		"src": "dunkey hes a bozo"},
+		{"text": "Hold the phone! (NSFW)",
+		"src": "dunkey hold the phone"}
 	],
 	"subcats": [
 		{"name": "CS:GO",
@@ -265,10 +284,21 @@
 		]},
 		{"name": "Overwatch",
 		"sounds": [
-			{"text": "Fool me once...",
-			"src": "dunkey fool me once"},
+			{"text": "Fool me once, shame on you...",
+			"src": "dunkey fool me once original"},
+			{"text": "Fool me once, shame on you... (SFW)",
+				"src": "dunkey fool me once sfw"},
 			{"text": "Hi there!",
 			"src": "overwatch winston hi there"}
+		]},
+		{"name": "Rocket League",
+		"sounds": [
+			{"text": "Defense all day, baby. You can't get it past me.",
+			"src": "dunkey defense all day baby"},
+			{"text": "That's a goal.",
+			"src": "dunkey thats a goal"},
+			{"text": "You're garbage.",
+			"src": "dunkey youre garbage"}
 		]},
 		{"name": "Soundboard within a Soundboard",
 		"sounds": [
@@ -445,7 +475,7 @@
 			"src": "ltt taren chinese taipei"},
 			{"text": "The macro solution for the everyman!",
 			"src": "ltt taran the ultimate macro solution for the everyman"},
-			{"text": "This is a problem that windows has had...",
+			{"text": "This is a problem that Windows has had...",
 			"src": "ltt taran this is a problem Windows has had for its entire lifespan"}
 		]}
 	]},
@@ -658,6 +688,8 @@
 		"src": "shes a maniac"},
 		{"text": "That's the way you do it!",
 		"src": "thats the way you do it"},
+		{"text": "USSR Anthem",
+		"src": "ussr national anthem short"},
 		{"text": "What's goin' on?!",
 		"src": "whats goin on"},
 		{"text": "What. What.",
