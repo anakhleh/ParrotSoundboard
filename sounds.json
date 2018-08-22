@@ -231,6 +231,19 @@
 			{"text": "Look at it go!",
 			"src": "look at it go"}
 		]},
+		{"name": "ALWAYSWANNAFLY",
+		"sounds": [
+			{"text": "Just calm down. Chill Pls.",
+			"src": "just calm down chill pls"},
+			{"text": "No, no... stop pls. Just stop. Thank you.",
+			"src": "no no stop pls just stop thank you"},
+			{"text": "Stop. I mean it!",
+			"src": "stop i mean it"},
+			{"text": "Sorry, sorry chair.",
+			"src": "sry sry chair"},
+			{"text": "What about like this... No. (x2)",
+			"src": "what about like this no x2"}
+		]},
 		{"name": "Wraith King",
 		"sounds": [
 			{"text": "I now have all the sexy!",
