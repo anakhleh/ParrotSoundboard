@@ -198,6 +198,19 @@
 			{"text": "DIGITAL SPORTS!",
 			"src": "dota stanley digital sports"}
 		]},
+		{"name": "Winstrike.ALWAYSWANNAFLY",
+		"sounds": [
+			{"text": "Just calm down. Chill Pls.",
+			"src": "dota alwayswannafly just calm down chill pls"},
+			{"text": "No, no... stop pls. Just stop. Thank you.",
+			"src": "dota alwayswannafly no no stop pls just stop thank you"},
+			{"text": "Stop! I mean it!",
+			"src": "dota alwayswannafly stop i mean it"},
+			{"text": "Sorry, sorry chair.",
+			"src": "dota alwayswannafly sry sry chair"},
+			{"text": "What about like this... No. How about th- No.",
+			"src": "dota alwayswannafly what about like this no"}
+		]},
 		{"name": "Axe",
 		"sounds": [
 			{"text": "I said good day, sir!",
