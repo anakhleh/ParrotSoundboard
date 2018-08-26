@@ -222,16 +222,7 @@
 			{"text": "I'm fantastic!",
 			"src": "im fantastic"}
 		]},
-		{"name": "Witch Doctor",
-		"sounds": [
-			{"text": "Ahhh, thanks man!",
-			"src": "dota witch doctor ahhh thanks man"},
-			{"text": "Ho ho oyeah!",
-			"src": "ho ho oyeah"},
-			{"text": "Look at it go!",
-			"src": "look at it go"}
-		]},
-		{"name": "ALWAYSWANNAFLY",
+		{"name": "Winstrike.ALWAYSWANNAFLY",
 		"sounds": [
 			{"text": "Just calm down. Chill Pls.",
 			"src": "just calm down chill pls"},
@@ -243,6 +234,15 @@
 			"src": "sry sry chair"},
 			{"text": "What about like this... No. (x2)",
 			"src": "what about like this no x2"}
+		]},
+		{"name": "Witch Doctor",
+		"sounds": [
+			{"text": "Ahhh, thanks man!",
+			"src": "dota witch doctor ahhh thanks man"},
+			{"text": "Ho ho oyeah!",
+			"src": "ho ho oyeah"},
+			{"text": "Look at it go!",
+			"src": "look at it go"}
 		]},
 		{"name": "Wraith King",
 		"sounds": [
