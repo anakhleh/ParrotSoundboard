@@ -1,0 +1,53 @@
+<!-- <ion-split-pane contentId="menu-content"> -->
+    <!--  our side menu  -->
+    <ion-menu contentId="menu-content" side="end">
+      <ion-header>
+        <ion-toolbar color="danger">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+        <ion-list>
+            <ion-item>x</ion-item>
+            <ion-item>x</ion-item>
+        </ion-list>
+    </ion-menu>
+  
+    <!-- the main content -->
+    <ion-router-outlet id="menu-content">
+      <ion-content>
+        <!-- <ion-header>
+          <ion-toolbar>
+            <ion-title>
+              Parrot
+            </ion-title>
+            <ion-menu-button slot="end"><ion-icon name="menu" size="large"></ion-icon></ion-menu-button>
+          </ion-toolbar>
+        </ion-header> -->
+          <ion-card center id="searchBar">
+            <ion-item>
+                <ion-icon name="search" side="left"></ion-icon>
+                <ion-input type="text" placeholder="Search Sounds" [(ngModel)]="searchText" style="margin-left: 20px;"></ion-input>
+                <ion-button *ngIf="searchText" fill="clear"><ion-icon name="close-circle"></ion-icon></ion-button>                
+            </ion-item>
+          </ion-card>
+          
+            <div *ngFor="let category of content">
+              <ion-item>
+                category: {{category.categoryName}}
+                
+                <ion-button fill="outline" *ngFor="let sound of category.sounds">{{sound.soundName}}</ion-button>
+                <ng-container *ngFor="let subcategory of category.subcategories" text-center>
+                  subcategory: {{subcategory.subcategoryName}}
+                  <br>
+                  <ion-button *ngFor="let sound of subcategory.sounds" fill="outline">{{sound.soundName}}</ion-button>
+                </ng-container>
+                <!-- <div text-center>
+                  Other
+                  <br>
+                      <ion-button *ngFor="let sound of subcategory.sounds" fill="outline">{{sound.soundName}}</ion-button>
+                  </div> -->
+              </ion-item>
+            </div>
+      </ion-content>
+    </ion-router-outlet>
+  <!-- </ion-split-pane> -->
